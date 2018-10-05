@@ -1,4 +1,3 @@
 package ru.vd.movie
 
-
-interface BaseView
+interface BaseView<T>
