@@ -1,0 +1,49 @@
+language: android
+jdk:
+  - oraclejdk8
+
+env:
+  global:
+   # install timeout in minutes (2 minutes by default)
+    - ADB_INSTALL_TIMEOUT=8
+
+#Install API 28
+before_install:
+  - yes | sdkmanager "platforms;android-28"
+
+#Caching
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+
+#Notification
+notifications:
+    email:
+      recipients:
+        - karapetiandav@gmail.com
+        - viktkurl@yandex.ru
+      on_success: always # default: change
+      on_failure: always # default: always
+      on_start: always   # default: never
+      on_cancel: always # default: always
+      on_error: always # default: always
+
+#Android
+android:
+  components:
+      - tools
+      - platform-tools
+      - build-tools-28.0.2
+      - android-28
+      - extra-android-m2repository
+      - extra-google-m2repository
+
+script:
+  - ./gradlew check
+  - ./gradlew test
+  - ./gradlew clean assembleDebug assembleRelease
