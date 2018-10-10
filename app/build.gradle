@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-kapt'
-
 apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'jacoco'
 
 apply plugin: 'pmd'
+
+apply plugin: 'kotlin-kapt'
 
 jacoco {
 	toolVersion = "$jacoco_version"
@@ -152,4 +152,10 @@ dependencies {
 	testImplementation 'junit:junit:4.12'
 	androidTestImplementation 'com.android.support.test:runner:1.0.2'
 	androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+	//Start dagger region
+	implementation dagger.base
+	annotationProcessor dagger.compiler
+	kapt dagger.compiler
+	//End dagger region
 }
