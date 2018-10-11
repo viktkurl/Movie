@@ -26,7 +26,7 @@ allprojects {
 }
 
 subprojects {
-	ext.minSdkLevel = 15
+	ext.minSdkLevel = 19
 	ext.targetSdkLevel = 28
 	ext.compileSdkLevel = 28
 

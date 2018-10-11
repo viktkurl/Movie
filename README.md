@@ -1,7 +1,12 @@
 # Movie
 MovieDB based rating app
 
-##### Authors:
--[karapetiandav](https://github.com/karapetiandav)
+##### Info
+Min SDK lvl API 19
 
--[viktkurl](https://github.com/viktkurl)
+##### Created by:
+ * [karapetiandav](https://github.com/karapetiandav)
+
+ * [viktkurl](https://github.com/viktkurl)
+ 
+
