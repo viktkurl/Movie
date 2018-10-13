@@ -65,4 +65,9 @@ dependencies {
 	annotationProcessor dagger.compiler
 	kapt dagger.compiler
 	//End dagger region
+
+	//Start moshi region
+	implementation moshi.base
+	kapt moshi.kotlin
+	//End moshi region
 }
