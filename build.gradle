@@ -1,4 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'jacoco'
 
 buildscript {
 	ext.kotlin_version = '1.2.71'
@@ -22,6 +23,14 @@ allprojects {
 		jcenter()
 	}
 	apply from: "${rootDir}/dependencies.gradle"
+}
+
+subprojects {
+	ext.minSdkLevel = 19
+	ext.targetSdkLevel = 28
+	ext.compileSdkLevel = 28
+
+	apply plugin: 'jacoco'
 }
 
 task clean(type: Delete) {
