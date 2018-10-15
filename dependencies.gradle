@@ -6,11 +6,21 @@ ext {
 			compiler: "com.google.dagger:dagger-compiler:${dagger_version}"
 	]
 	//End dagger region
+
 	//Start moshi region
 	moshi_version = "1.7.0"
 	moshi = [
-	        base: "com.squareup.moshi:moshi:${moshi_version}",
+			base  : "com.squareup.moshi:moshi:${moshi_version}",
 			kotlin: "com.squareup.moshi:moshi-kotlin-codegen:${moshi_version}"
 	]
 	//End moshi region
+
+	//Start retrofit region
+	retrofit_version = "2.4.0"
+	retrofit = [
+			base     : "com.squareup.retrofit2:retrofit:${retrofit_version}",
+			converter: "com.squareup.retrofit2:converter-moshi:${retrofit_version}",
+			mock     : "com.squareup.retrofit2:retrofit-mock:${retrofit_version}"
+	]
+	//End retrofit region
 }
