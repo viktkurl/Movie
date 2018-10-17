@@ -1,4 +1,4 @@
-package ru.vd.movie.ui
+package ru.vd.movie.moviedetail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,12 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_movie_detail.*
 import ru.vd.movie.R
 import ru.vd.movie.models.DetailedMovie
-import ru.vd.movie.movies.MovieDetailContract
-import ru.vd.movie.movies.MovieDetailPresenter
 import ru.vd.movie.show
+import javax.inject.Inject
 
 class MovieDetailFragment : Fragment(), MovieDetailContract.View {
 
+    @Inject
     override var presenter: MovieDetailContract.Presenter? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

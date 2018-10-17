@@ -1,4 +1,4 @@
-package ru.vd.movie.movies
+package ru.vd.movie.moviedetail
 
 import ru.vd.movie.BasePresenter
 import ru.vd.movie.BaseView
