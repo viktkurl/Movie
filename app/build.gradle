@@ -87,6 +87,6 @@ dependencies {
 	kapt dagger.compiler
 	//End dagger region
 
-    implementation "com.google.android.material:material:1.0.0"
-    implementation 'com.squareup.moshi:moshi-kotlin:1.7.0'
+    implementation material
+    implementation moshi.kotlin
 }

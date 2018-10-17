@@ -10,7 +10,9 @@ ext {
 	moshi_version = "1.7.0"
 	moshi = [
 	        base: "com.squareup.moshi:moshi:${moshi_version}",
-			kotlin: "com.squareup.moshi:moshi-kotlin-codegen:${moshi_version}"
+			kotlin: "com.squareup.moshi:moshi-kotlin:${moshi_version}",
+			kotlinCodegen: "com.squareup.moshi:moshi-kotlin-codegen:${moshi_version}"
 	]
 	//End moshi region
+	material = "com.google.android.material:material:1.0.0"
 }
