@@ -3,6 +3,7 @@ package ru.vd.movie.movies
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.vd.movie.R
+import ru.vd.movie.ui.MovieDetailFragment
 
 class MainActivity : AppCompatActivity() {
 

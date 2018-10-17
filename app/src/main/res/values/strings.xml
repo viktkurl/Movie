@@ -1,4 +1,13 @@
 <resources>
 	<string name="app_name">Movie</string>
     <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="movie_detail_content_description">Постер фильма</string>
+    <plurals name="minutes">
+        <item quantity="zero">Минут</item>
+        <item quantity="one">Минута</item>
+        <item quantity="two">Минуты</item>
+        <item quantity="few">Минуты</item>
+        <item quantity="many">Минут</item>
+    </plurals>
 </resources>

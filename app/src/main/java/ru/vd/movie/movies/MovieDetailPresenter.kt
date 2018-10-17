@@ -1,0 +1,1 @@
+package ru.vd.movie.moviesclass MovieDetailPresenter : MovieDetailContract.Presenter {    override var view: MovieDetailContract.View? = null    override fun loadMovie() {        view?.setLoadingIndicator(true)    }}

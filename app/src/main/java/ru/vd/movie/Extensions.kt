@@ -1,0 +1,1 @@
+package ru.vd.movieimport android.view.View.GONEimport android.view.View.VISIBLEimport android.widget.ProgressBarfun ProgressBar.show(show: Boolean) {    visibility = if (show) {        VISIBLE    } else {        GONE    }}

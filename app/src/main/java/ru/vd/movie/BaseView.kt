@@ -1,3 +1,5 @@
 package ru.vd.movie
 
-interface BaseView<T>
+interface BaseView<T> {
+    var presenter: T?
+}
