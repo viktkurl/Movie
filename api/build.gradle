@@ -70,4 +70,10 @@ dependencies {
 	implementation moshi.base
 	kapt moshi.kotlin
 	//End moshi region
+
+	//Start retrofit region
+	implementation retrofit.base
+	implementation retrofit.converter
+	implementation retrofit.mock
+	//End  retrofit region
 }
