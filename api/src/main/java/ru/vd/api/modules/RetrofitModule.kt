@@ -13,7 +13,7 @@ import javax.inject.Singleton
  * @author viktor
  */
 @Module
-class RestModule {
+class RetrofitModule {
 	@Provides
 	@Singleton
 	fun getRetrofit(okHttpClient: OkHttpClient,
